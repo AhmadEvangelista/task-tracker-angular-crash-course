@@ -17,18 +17,6 @@
       "text": "Food Shopping",
       "day": "May 7th at 12:30pm",
       "reminder": false
-    },
-    {
-      "text": "Test Task",
-      "day": "May 7th",
-      "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "New Test Task",
-      "day": "Aug 28th",
-      "reminder": false,
-      "id": 5
     }
   ]
 }
