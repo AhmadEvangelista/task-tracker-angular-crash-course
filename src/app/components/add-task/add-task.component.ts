@@ -9,15 +9,11 @@ import { Task } from 'src/app/Task';
 export class AddTaskComponent implements OnInit {
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
-  text: string;
-  day: string;
-  reminder: boolean;
+  text: string = '';
+  day: string = '';
+  reminder: boolean = false;
 
-  constructor() {
-    this.text = '';
-    this.day = '';
-    this.reminder = false;
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 

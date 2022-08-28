@@ -8,20 +8,18 @@ import { Task } from 'src/app/Task';
   styleUrls: ['./task-item.component.css'],
 })
 export class TaskItemComponent implements OnInit {
-  @Input() task: Task;
+  @Input() task: Task = {
+    id: 0,
+    text: '',
+    day: '',
+    reminder: false,
+  };
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
   @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter();
 
   faTimes = faTimes;
 
-  constructor() {
-    this.task = {
-      id: 0,
-      text: '',
-      day: '',
-      reminder: false,
-    };
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 
